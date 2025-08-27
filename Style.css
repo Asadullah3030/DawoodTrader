@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.Logo-Dawood-Trader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        padding: 20px;
+        font-weight: 500;
+        font-family: "Beau Rivage", cursive;
+    }
+.Heading-Section{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(236, 236, 236);
+
+    h2{
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: 300;
+
+    }
+     h1{
+        font-weight: 400;
+        margin-top: 20px;
+        font-size: 3rem;
+        color: #555;
+     }
+     strong{
+        background-color: rgb(219, 218, 218);
+        padding: 5px;
+        color: rgb(84, 84, 84);
+        border-radius: 5px;
+     }  
+}
