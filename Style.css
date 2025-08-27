@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 .Logo-Dawood-Trader{
         display: flex;
         align-items: center;
@@ -38,3 +42,123 @@
         border-radius: 5px;
      }  
 }
+
+ .product-detail{
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        .left-detail{
+            flex: 1;
+            img{
+                width: 28rem;
+            }
+            .small-img-row{
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                .small-img-col{
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .right-detail{
+            padding-left: 1rem;
+            flex: 2;
+            h5{
+                color: #555;
+            }
+            h1{
+                font-size: 2.4rem;
+            }
+            h4{
+                margin-bottom: 0.8rem;
+                margin-top: 0.5rem;
+                color: #ff5039;
+            }
+            select{
+                width: 9.6rem;
+                padding: 4px 6px;
+            }
+            button{
+                margin-top: 0.8rem;
+                border: none;
+                color: white;
+                padding: 10px 18px;
+                border-radius: 100px;
+                cursor: pointer;
+                background-color: #ff5039;
+                &:hover{
+                    background-color: #ce3926;
+                }
+            }
+            h2{
+                margin-top: 0.8rem;
+            }
+            p{
+                font-size: 0.90rem;
+                margin-top: 0.8rem;
+            }
+        }
+    }
+
+    .Product-Card{
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .card{
+        /* padding: ; */
+        text-align: center;
+        width: 20%;
+    }
+    .card img{
+        width: 20rem;
+    }
+    .inside-card{
+        padding: 10px;
+    }
+     .inside-card h4{
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .inside-card h5{
+        margin-top: 6px;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #6b6b6b;
+    }
+    .price{
+        padding: 10px;
+        width: 100%;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+    .discount-price{
+        /* background-color: rgb(254, 20, 20); */
+       font-size: 1.5rem;
+       font-weight: 800;
+    }
+    .original-price{
+        color: #868686;
+        font-size: 1rem;
+    }
+    .inside-card button {
+        text-decoration: none;
+        border: none;
+        font-size: .9rem;
+        padding: 14px 24px;
+        border-radius: 100px;
+        margin-top: 10px;
+        background-color: rgb(250, 63, 63);
+        transition: all 0.3s ease;
+    }
+    .inside-card button:hover{
+        background-color: rgb(190, 39, 39);
+    }
