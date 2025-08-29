@@ -74,15 +74,28 @@
   </div>
 </div>
 
-  <script>
+ <script>
   // Product Data
   const products = {
     "32A": {
-      title: "Tomzn DC Breaker <br/>(2 Pole, 32A)",
+      title: "Tomzn DC Breaker 32A (2 Pole) – <br> Compact & Reliable Solar Protection Switch",
       shortTitle: "Solar / Breaker 32-A | 2 Pole",
       discountPrice: "1199 Rs",
       originalPrice: "1600 Rs",
-      detail: "Tomzn DC Breaker (32A, 2 Pole) – Compact & reliable design. Provides safety against overloads and short circuits.",
+      detail: `
+        The Tomzn DC Breaker (32A, 2 Pole) is a compact and durable breaker designed for small to medium solar systems. It ensures safe operation by providing protection against overloads and short circuits, delivering stable performance for long-term use.
+        <br><br>
+        <h6>Key Features:</h6>
+        <ul>
+          <li>Model: TOB7Z-32</li>
+          <li>Rated Current: 32A</li>
+          <li>Number of Poles: 2P (Double Pole)</li>
+          <li>Voltage Rating: DC 500V – 800V (commonly used for small/medium solar setups)</li>
+          <li>Certified Quality: ISO 9001, ISO 14001, ISO 45001 approved</li>
+          <li>Reliable Protection: Safeguards against overload & short-circuit</li>
+          <li>Durable & Safe: Compact design, ensures long-term stable performance</li>
+        </ul>
+      `,
       images: [
         "Images/Dc-32-Braker/2.jpg",
         "Images/Dc-32-Braker/1.jpg",
@@ -93,11 +106,25 @@
       ]
     },
     "63A": {
-      title: "Tomzn DC Breaker <br/>(2 Pole, 63A)",
+      title: "Tomzn DC Breaker 63A (2 Pole) – <br>High Capacity Solar Protection Switch",
       shortTitle: "Solar / Breaker 63-A | 2 Pole",
       discountPrice: "1899 Rs",
       originalPrice: "2200 Rs",
-      detail: "Tomzn DC Breaker (63A, 2 Pole) – High capacity breaker for larger systems. Ensures safe and stable performance.",
+      detail: `
+        The Tomzn DC Breaker (63A, 2 Pole) is a high-performance breaker designed for solar systems and large electrical setups. 
+        It ensures safe and stable operation by protecting against overloads and short circuits.
+        <br><br>
+        <b>Key Features:</b>
+        <ul>
+          <li>Model: TOB7Z-63</li>
+          <li>Rated Current: 63A</li>
+          <li>Number of Poles: 2P (Double Pole)</li>
+          <li>Voltage Rating: DC 1000V</li>
+          <li>Certified Quality: ISO 9001, ISO 14001, ISO 45001 approved</li>
+          <li>Durable & safe – ensures long-term stable performance</li>
+          <li>Ideal for solar energy systems & high-voltage DC applications</li>
+        </ul>
+      `,
       images: [
         "Images/Dc-63-Braker/7.jpg",
         "Images/Dc-63-Braker/8.jpg",
@@ -119,7 +146,7 @@
     document.getElementById("short-title").innerText = p.shortTitle;
     document.getElementById("discount-price").innerText = p.discountPrice;
     document.getElementById("original-price").innerHTML = `<strike> | ${p.originalPrice}</strike>`;
-    document.getElementById("product-detail").innerText = p.detail;
+    document.getElementById("product-detail").innerHTML = p.detail;
 
     // Update Images
     mainImg.src = p.images[0];
@@ -140,7 +167,8 @@
   productSelect.addEventListener("change", (e) => {
     updateProduct(e.target.value);
   });
-  </script>
+</script>
+
 
     </div>
 

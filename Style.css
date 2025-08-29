@@ -18,24 +18,18 @@ a{
         font-weight: 500;
         font-family: "Beau Rivage", cursive;
     }
+
+    
 .Heading-Section{
     text-align: center;
     padding: 20px;
     background-color: rgb(236, 236, 236);
-
-    h2{
-        font-size: 2rem;
-        color: #333;
-        margin-bottom: 20px;
-        font-weight: 300;
-
-    }
-     h1{
-        font-weight: 400;
-        margin-top: 20px;
-        font-size: 3rem;
-        color: #555;
-     }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+   
+     
      strong{
         background-color: rgb(219, 218, 218);
         padding: 5px;
@@ -43,6 +37,47 @@ a{
         border-radius: 5px;
      }  
 }
+.Heading-Section  h2{
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: 300;
+        width: 80%;
+    }
+   
+        
+.Heading-Section h1{
+        font-weight: 400;
+        margin-top: 20px;
+        font-size: 3rem;
+        color: #555;
+        width: 80%;
+     }
+     
+     @media (max-width: 768px) {
+        .Heading-Section h1 {
+            font-size: 2rem;
+        }
+
+         @media (max-width: 768px) {
+        .Heading-Section h2 {
+            font-size: 1.4rem;
+        }
+        @media (max-width: 768px) {
+        .Logo-Dawood-Trader {
+            font-size: 2.3rem;
+        }
+
+        @media (max-width: 500px) {
+        .Heading-Section h1 {
+            font-size: 1.5rem;
+             width: 95%;
+        }
+          @media (max-width: 500px) {
+        .Heading-Section h2 {
+            font-size: 1.2rem;
+             width: 95%;
+        }
 
  .product-detail{
         margin-top: 2rem;
