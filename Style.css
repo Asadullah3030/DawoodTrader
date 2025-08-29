@@ -18,8 +18,6 @@ a{
         font-weight: 500;
         font-family: "Beau Rivage", cursive;
     }
-
-    
 .Heading-Section{
     text-align: center;
     padding: 20px;
@@ -54,136 +52,135 @@ a{
         width: 80%;
      }
      
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
         .Heading-Section h1 {
             font-size: 2rem;
         }
-
-         @media (max-width: 768px) {
         .Heading-Section h2 {
             font-size: 1.4rem;
         }
-        @media (max-width: 768px) {
-        .Logo-Dawood-Trader {
-            font-size: 2.3rem;
-        }
+    }
 
-        @media (max-width: 500px) {
+    @media (max-width: 768px) {
+        .Logo-Dawood-Trader{
+            font-size: 2.5rem;
+        }
+    }
+    
+    @media (max-width: 500px) {
         .Heading-Section h1 {
             font-size: 1.5rem;
-             width: 95%;
+            width: 95%;
         }
-          @media (max-width: 500px) {
         .Heading-Section h2 {
             font-size: 1.2rem;
-             width: 95%;
-        }
-
- .product-detail{
-        margin-top: 2rem;
-        display: flex;
-        align-items: center;
-        .left-detail{
-            text-align: center;
-            flex: 1;
-            img{
-                width: 28rem;
-            }
-            .small-img-row{
-                display: flex;
-                justify-content: space-between;
-                gap: 10px;
-                .small-img-col{
-                    cursor: pointer;
-                    img{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        .right-detail{
-            padding-left: 1rem;
-            flex: 2;
-            h5{
-                color: #555;
-            }
-            h1{
-                font-size: 2.4rem;
-            }
-            h4{
-                margin-bottom: 0.8rem;
-                margin-top: 0.5rem;
-                color: #ff5039;
-            }
-            select{
-                width: 9.6rem;
-                padding: 4px 6px;
-            }
-            button{
-                margin-top: 0.8rem;
-                border: none;
-                color: white;
-                padding: 10px 18px;
-                border-radius: 100px;
-                cursor: pointer;
-                background-color: rgb(254, 20, 20);
-                &:hover{
-                    background-color: #ce3926;
-                }
-            }
-           
-            
+            width: 95%;
         }
     }
 
+.product-detail{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.left-detail{
+    text-align: center;
+    flex: 1;
+}
+.left-detail img{
+    width: 28rem;
+}
+.left-detail .small-img-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.left-detail .small-img-row .small-img-col{
+    cursor: pointer;
+}
+.left-detail .small-img-row .small-img-col img{
+    width: 100%;
+}
+.right-detail{
+    padding-left: 1rem;
+    flex: 2;
+}
+.right-detail h5{
+    color: #555;
+}
+.right-detail h1{
+    font-size: 2.4rem;
+}
+.right-detail h4{
+    margin-bottom: 0.8rem;
+    margin-top: 0.5rem;
+    color: #ff5039;
+}
+.right-detail select{
+    width: 9.6rem;
+    padding: 4px 6px;
+}
+.right-detail button{
+    margin-top: 0.8rem;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: rgb(254, 20, 20);
+    transition: background-color 0.3s;
+}
+.right-detail button:hover{
+    background-color: #ce3926;
+}
 
-    .inside-card{
-        padding: 10px;
-    }
-     .inside-card h4{
-        font-weight: 500;
-        font-size: 1.5rem;
-    }
-    .inside-card h5{
-        margin-top: 6px;
-        font-size: 1rem;
-        font-weight: 300;
-        color: #6b6b6b;
-    }
-    .price{
-        padding: 8px;
-        font-size: 1.4rem;
-        display: flex;
-        /* justify-content: center; */
-        align-items: center;
-    }
-    .discount-price{
-        color: rgb(254, 20, 20);
-       font-size: 1.5rem;
-       font-weight: 800;
-    }
-    .original-price{
-        color: #868686;
-        font-size: 1rem;
-    }
-    .inside-card button {
-        border: none;
-        font-size: .9rem;
-        padding: 14px 24px;
-        border-radius: 100px;
-        margin-top: 10px;
-        background-color: rgb(250, 63, 63);
-        transition: all 0.3s ease;
-    }
-    .inside-card button:hover{
-        background-color: rgb(190, 39, 39);
-    }
-    .Select-Product-Model{
-        margin-top: .2rem;
-        font-style: italic;
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    .select-part{
-        color: #474747;
-    }
+.inside-card{
+    padding: 10px;
+}
+.inside-card h4{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.inside-card h5{
+    margin-top: 6px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #6b6b6b;
+}
+.price{
+    padding: 8px;
+    font-size: 1.4rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.discount-price{
+    color: rgb(254, 20, 20);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.original-price{
+    color: #868686;
+    font-size: 1rem;
+}
+.inside-card button {
+    border: none;
+    font-size: .9rem;
+    padding: 14px 24px;
+    border-radius: 100px;
+    margin-top: 10px;
+    background-color: rgb(250, 63, 63);
+    transition: all 0.3s ease;
+}
+.inside-card button:hover{
+    background-color: rgb(190, 39, 39);
+}
+.Select-Product-Model{
+    margin-top: .2rem;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.select-part{
+    color: #474747;
+}
