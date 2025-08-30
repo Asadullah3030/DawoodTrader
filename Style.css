@@ -4,10 +4,6 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-a{
-    text-decoration: none !important;
-    color: rgb(255, 255, 255) !important;
-}
 
 .Logo-Dawood-Trader{
         display: flex;
@@ -146,11 +142,11 @@ a{
     padding: 10px 18px;
     border-radius: 100px;
     cursor: pointer;
-    background-color: rgb(254, 20, 20);
-    transition: background-color 0.3s;
+    background-color: black;
+    transition: background-color 0.4s;
 }
 .right-detail button:hover{
-    background-color: #ce3926;
+    background-color: #414141;
 }
 
 .inside-card{
@@ -202,4 +198,44 @@ a{
 }
 .select-part{
     color: #474747;
+}
+.thanks-msg{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.thanks-msg h1{
+    font-size: 3rem;
+    color: #333;
+}
+.note-first{
+    font-style: italic;
+}
+.note-second{
+    font-family: "Almarai", sans-serif;
+    color: #555;
+    font-size: 2rem;
+}
+.main-btn{
+    background-color: rgb(26, 26, 26);
+    display: inline-block;
+     border-radius: 2rem;
+     margin-top: .7rem;
+     margin-bottom: .4rem;
+}
+.main-btn a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1rem;
+}
+.main-btn a:hover{
+    background-color: rgb(54, 54, 54);
+    border-radius: 2rem;
+    color: white;
+    transition: all 0.3s ease;
 }

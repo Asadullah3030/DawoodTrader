@@ -48,20 +48,23 @@
 
           <div class="price">
             <p id="discount-price" class="discount-price m-0">1399 Rs</p>
-            <p id="original-price" class="original-price m-0">
+            <p id="original-price" class="original-price m-0 px-1">
               <strike> | 1900 Rs</strike>
             </p>
           </div>
 
           <h6 class="Select-Product-Model">Select Product Model</h6>
-          <select class="mt-2 select-part" id="product-select">
+<div class="d-flex flex-column align-items-start">
+<select class="mt-2 select-part" id="product-select">
             <option value="32A" id="option">AC Breaker 32 A 2 Pole</option>
             <option value="63A">AC Breaker 63 A 2 Pole</option>
           </select>
 
-          <div class="mt-2">
-            <button><a href="card.html">Add To Cart Now!</a></button>
+         <div class="main-btn mt-3">
+                  <a onclick="sendToWhatsApp()" href="Thank-You.html">Buy Now Free Home Delivery</a>
           </div>
+</div>
+          
 
           <h2 class="mt-3">Product Detail</h2>
           <p id="product-detail">
@@ -77,37 +80,67 @@
   <script>
   // Product Data
   const products = {
-    "32A": {
-      title: "Tomzn AC Breaker <br/>(2 Pole, 32A)",
-      shortTitle: "Solar / Breaker 32-A | 2 Pole",
-      discountPrice: "1399 Rs",
-      originalPrice: "1900 Rs",
-      detail: "Tomzn AC Breaker (32A, 2 Pole) – Compact & reliable design. Provides safety against overloads and short circuits.",
-      images: [
-        "Images/Ac-32-Braker/2.jpg",
-        "Images/Ac-32-Braker/1.jpg",
-        "Images/Ac-32-Braker/3.jpg",
-        "Images/Ac-32-Braker/4.jpg",
-        "Images/Ac-32-Braker/5.jpg",
-        "Images/Ac-32-Braker/6.jpg",
-      ]
-    },
-    "63A": {
-      title: "Tomzn AC Breaker <br/>(2 Pole, 63A)",
-      shortTitle: "Solar / Breaker 63-A | 2 Pole",
-      discountPrice: "1999 Rs",
-      originalPrice: "2500 Rs",
-      detail: "Tomzn AC Breaker (63A, 2 Pole) – High capacity breaker for larger systems. Ensures safe and stable performance.",
-      images: [
-        "Images/Ac-63-Braker/1.jpg",
-        "Images/Ac-63-Braker/2.jpg",
-        "Images/Ac-63-Braker/3.jpg",
-        "Images/Ac-63-Braker/4.jpg",
-        "Images/Ac-63-Braker/5.jpg",
-        "Images/Ac-63-Braker/6.jpg",
-      ]
-    }
-  };
+  "32A": {
+    title: "Tomzn AC Breaker 32A (2 Pole) – Compact & Reliable Circuit Protection",
+    shortTitle: "AC / Breaker 32-A | 2 Pole",
+    discountPrice: "1399 Rs",
+    originalPrice: "1900 Rs",
+    detail: `
+      The Tomzn AC Breaker (32A, 2 Pole) is designed for small to medium AC applications. 
+      It provides effective protection against overloads and short circuits, ensuring the safety and stability of your electrical system.
+      <br><br>
+      <h6>📌 Key Features:</h6>
+      <ul>
+        <li>Model: TOB7-32 (AC)</li>
+        <li>Rated Current: 32A</li>
+        <li>Number of Poles: 2P (Double Pole)</li>
+        <li>Voltage Rating: AC 230/400V</li>
+        <li>Certified Quality: ISO 9001, ISO 14001, ISO 45001 approved</li>
+        <li>Reliable Protection: Safeguards against overload & short-circuit</li>
+        <li>Durable & Safe: Compact design, ensures long-term stable performance</li>
+      </ul>
+    `,
+    images: [
+      "Images/Ac-32-Braker/2.jpg",
+      "Images/Ac-32-Braker/1.jpg",
+      "Images/Ac-32-Braker/3.jpg",
+      "Images/Ac-32-Braker/4.jpg",
+      "Images/Ac-32-Braker/5.jpg",
+      "Images/Ac-32-Braker/6.jpg",
+    ]
+  },
+
+  "63A": {
+    title: "Tomzn AC Breaker 63A (2 Pole) – High Capacity Circuit Protection Switch",
+    shortTitle: "AC / Breaker 63-A | 2 Pole",
+    discountPrice: "1999 Rs",
+    originalPrice: "2500 Rs",
+    detail: `
+      The Tomzn AC Breaker (63A, 2 Pole) is a high-capacity breaker for large residential, commercial, and industrial AC systems. 
+      It ensures maximum safety by protecting against overloads and short circuits, delivering stable and reliable performance.
+      <br><br>
+      <h6 >📌 Key Features:</h6>
+      <ul class="mt-2">
+        <li>Model: TOB7-63 (AC)</li>
+        <li>Rated Current: 63A</li>
+        <li>Number of Poles: 2P (Double Pole)</li>
+        <li>Voltage Rating: AC 230/400V</li>
+        <li>Certified Quality: ISO 9001, ISO 14001, ISO 45001 approved</li>
+        <li>Application: Suitable for high-power AC circuits and industrial use</li>
+        <li>Protection: Strong overload & short-circuit protection</li>
+        <li>Durable & Safe: Heavy-duty design for long-term reliability</li>
+      </ul>
+    `,
+    images: [
+      "Images/Ac-63-Braker/1.jpg",
+      "Images/Ac-63-Braker/2.jpg",
+      "Images/Ac-63-Braker/3.jpg",
+      "Images/Ac-63-Braker/4.jpg",
+      "Images/Ac-63-Braker/5.jpg",
+      "Images/Ac-63-Braker/6.jpg",
+    ]
+  }
+};
 
   const productSelect = document.getElementById("product-select");
   const mainImg = document.getElementById("main-img");
@@ -119,7 +152,7 @@
     document.getElementById("short-title").innerText = p.shortTitle;
     document.getElementById("discount-price").innerText = p.discountPrice;
     document.getElementById("original-price").innerHTML = `<strike> | ${p.originalPrice}</strike>`;
-    document.getElementById("product-detail").innerText = p.detail;
+    document.getElementById("product-detail").innerHTML = p.detail;
 
     // Update Images
     mainImg.src = p.images[0];
