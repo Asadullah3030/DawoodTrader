@@ -26,7 +26,7 @@
     <div class="main-section">
       <a href="index.html"><h3 class="Logo-Dawood-Trader text-black">Dawood Trader</h3></a>
 
-      <div class="product-detail">
+  <div class="product-detail">
   <div class="container">
     <div class="row">
       <!-- Left Side (Images) -->
@@ -58,6 +58,8 @@
           <select class="mt-2 select-part" id="product-select">
               <option value="32A" id="option">DC Breaker 32 A 2 Pole</option>
               <option value="63A">DC Breaker 63 A 2 Pole</option>
+              <option value="25A">DC Breaker 25 A 2 Pole</option>
+              <option value="16A">DC Breaker 16 A 2 Pole</option>
           </select>
 
          <div class="main-btn mt-3">
@@ -108,6 +110,7 @@
         "Images/Dc-32-Braker/6.jpg",
       ]
     },
+
     "63A": {
       title: "Tomzn DC Breaker 63A (2 Pole) – High Capacity Solar Protection Switch",
       shortTitle: "Solar / Breaker 63-A | 2 Pole",
@@ -136,8 +139,72 @@
         "Images/Dc-63-Braker/11.jpg",
         "Images/Dc-63-Braker/12.jpg",
       ]
+    },
+  
+    "25A": {
+      title: "TOMZN-DC-MCB TOB7Z-63 (2 Pole, 25A, 1000V DC Miniature Circuit Breaker)",
+      shortTitle: "Solar / Breaker 25-A | 2 Pole",
+      discountPrice: "2200 Rs",
+      originalPrice: "2500 Rs",
+      detail: `
+        TOMZN TOB7Z-63 is a high-quality DC miniature circuit breaker designed for solar PV systems and other DC applications. With a rated current of 25A, 2 poles, and up to 1000V DC capacity, it provides reliable protection against overcurrent and short circuits. Certified with IEC/EN 60947 standards and ISO quality compliance, this breaker ensures safety, durability, and stable performance.
+        <br><br>
+        <h6>📌 Key Features:</h6>
+        <ul>
+          <li>Brand: TOMZN</li>
+          <li>Model: TOB7Z-63</li>
+          <li>Rated Current: 25A</li>
+          <li>Number of Poles: 2P (Double Pole)</li>
+          <li>Rated Voltage: DC 1000V</li>
+          <li>Standard Compliance: IEC/EN 60947</li>
+          <li>Certifications: ISO 9001, ISO 14001, ISO 45001</li>
+          <li>Ideal for solar energy systems & high-voltage DC applications</li>
+        </ul>
+      `,
+      images: [
+        "Images/Dc-25-Braker/2.jpg",
+        "Images/Dc-25-Braker/1.jpg",
+        "Images/Dc-25-Braker/3.jpg",
+        "Images/Dc-25-Braker/4.jpg",
+        "Images/Dc-25-Braker/5.jpg",
+        "Images/Dc-25-Braker/6.jpg",
+      ]
+    },
+  
+    "16A": {
+      title: "TOMZN DC-MCB TOB7Z-63 (2 Pole, 16A, 1000V DC Miniature Circuit Breaker)",
+      shortTitle: "Solar / Breaker 16-A | 2 Pole",
+      discountPrice: "999 Rs",
+      originalPrice: "1400 Rs",
+      detail: `
+        TOMZN TOB7Z-63 is a reliable DC miniature circuit breaker built for solar PV systems and other DC power applications. With a rated current of 16A, 2 poles, and support for up to 1000V DC, it ensures strong protection against overloads and short circuits. Backed by IEC/EN 60947-2 compliance and ISO certifications, this breaker delivers durability, safety, and efficient performance.
+        <br><br>
+        <h6>📌 Key Features:</h6>
+        <ul>
+          <li>Brand: TOMZN</li>
+          <li>Model: TOB7Z-63</li>
+          <li>Rated Current: 16A</li>
+          <li>Number of Poles: 2P (Double Pole)</li>
+          <li>Rated Voltage: DC 1000V</li>
+          <li>Standard Compliance: IEC/EN 60947-2</li>
+          <li>Certifications: ISO 9001, ISO 14001, ISO 45001</li>
+          <li>Ideal for solar energy systems & high-voltage DC applications</li>
+        </ul>
+      `,
+      images: [
+        "Images/Dc-16-Braker/2.jpg",
+        "Images/Dc-16-Braker/1.jpg",
+        "Images/Dc-16-Braker/3.jpg",
+        "Images/Dc-16-Braker/4.jpg",
+        "Images/Dc-16-Braker/5.jpg",
+        "Images/Dc-16-Braker/6.jpg",
+      ]
     }
+  
+  
   };
+
+  
 
   const productSelect = document.getElementById("product-select");
   const mainImg = document.getElementById("main-img");
