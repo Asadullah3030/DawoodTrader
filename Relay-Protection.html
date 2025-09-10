@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomzn DC Breaker | Dawood Trader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-section">
+     <div class="logo-dawood-trader">
+          <a href="index.html">
+              <h3>Dawood Trader</h3>
+          </a>
+      </div>
+
+  <div class="product-detail">
+  <div class="container">
+    <div class="row">
+      <!-- Left Side (Images) -->
+      <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="left-detail">
+          <img id="main-img" src="Images/Dc-32-Braker/6.jpg" class="large-img mb-3" />
+
+          <div class="small-img-row" id="thumbnail-row">
+            <!-- Thumbnails will load here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side (Details) -->
+      <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 mt-4 mt-lg-0 mt-xl-0">
+        <div class="right-detail ">
+          <h5 id="short-title">Digital Voltage Protection Relay</h5>
+          <h1 id="main-title">Digital Voltage Protection Relay with Dual Display</h1>
+
+          <div class="price">
+            <p id="discount-price" class="discount-price m-0">1350 Rs</p>
+            <p id="original-price" class="original-price m-0 px-1">
+              <strike> | 1740 Rs</strike>
+            </p>
+          </div>
+
+          <h6 class="Select-Product-Model">Select Product Model</h6>
+          <div class="d-flex flex-column align-items-start">
+          <select class="mt-2 select-part" id="product-select">
+              <option value="Relay-One" id="option">Generic Digital Voltage Relay</option>
+              <option value="Relay-Two">OMAS AVP-63 Protection Relay</option>
+              <option value="Relay-Three">NIN Electric NP2-VAKWH</option>
+              <option value="Relay-Four">TOMZN TOB7Z-63 Digital Voltage</option>
+              <option value="Relay-Five">ENTES AVK-40A/63A</option>
+             
+          </select>
+
+         <div class="main-btn mt-3">
+                        <a onclick="sendToWhatsApp()" href="Thank-You.html">Buy Now Free Home Delivery</a>
+                 </div>
+          </div>
+         
+
+          <h2 class="mt-3">Product Detail</h2>
+          <p id="product-detail">
+            Digital Voltage Protection Relay with Dual Display (Over & Under Voltage Protector)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <script>
+  // Product Data
+  const products = {
+    "Relay-One": {
+      title: "Digital Voltage Protection Relay with Dual Display (Over & Under Voltage Protector)",
+      shortTitle: "Generic Digital Voltage Relay",
+      discountPrice: "1350 Rs",
+      originalPrice: "1750 Rs",
+      detail: `
+       This Digital Voltage Protection Relay is designed to safeguard electrical appliances and equipment from voltage fluctuations. Featuring a dual LED display, it provides real-time monitoring of input and output voltages. The device automatically disconnects the load when the voltage goes beyond the preset over-voltage or under-voltage limits, ensuring reliable protection and longer lifespan of your appliances. Compact in design, it is suitable for home, office, and industrial applications.
+        <br><br>
+        <h6>📌 Key Features:</h6>
+        <ul>
+          <li>Generic / Unbranded (Common Chinese model)</li>
+          <li>Over & Under Voltage Protection: Automatically cuts off power when voltage exceeds preset limits.</li>
+          <li>Adjustable Settings: Allows users to set safe operating voltage ranges.</li>
+          <li>Compact Design: DIN-rail mountable for easy installation.</li>
+          <li>High Accuracy: Ensures stable performance and reliable protection.</li>
+          <li>Wide Application: Suitable for home appliances, offices, and industrial equipment.</li>
+          <li>Quick Response Time: Provides immediate protection against dangerous voltage fluctuations.</li>
+        </ul>
+      `,
+      images: [
+        "Images/Relay-Protection-One/1.jpg",
+        "Images/Relay-Protection-One/2.jpg",
+        "Images/Relay-Protection-One/3.jpg",
+        "Images/Relay-Protection-One/4.jpg",
+        "Images/Relay-Protection-One/5.jpg",
+        "Images/Relay-Protection-One/6.jpg",
+      ]
+    },
+
+    "Relay-Two": {
+      title: "OMAS AVP-63 Adjustable Voltage Protection Relay with Dual Display (Over/Under Voltage Protector)",
+      shortTitle: "OMAS AVP-63",
+      discountPrice: "1450 Rs",
+      originalPrice: "1850 Rs",
+      detail: `
+        The OMAS AVP-63 Adjustable Voltage Protection Relay is a high-quality device designed to protect your electrical appliances and equipment from unstable power conditions. With its dual digital display, it accurately monitors both voltage and current in real-time. The relay automatically disconnects the load when the supply goes beyond preset over-voltage, under-voltage, or over-current limits, ensuring maximum safety and efficiency. Featuring user-friendly buttons and adjustable settings, it is ideal for home, office, and industrial applications.
+        <br><br>
+        <h6>📌 Key Features:</h6>
+        <ul>
+          <li>Brand: OMAS (Trusted Quality with 18 Months Guarantee)</li>
+          <li>Model: AVP-63</li>
+          <li>Dual LED Display: Real-time monitoring of both voltage (V) and current (A).</li>
+          <li>Adjustable Settings: Allows users to set safe voltage and current protection limits.</li>
+          <li>Over & Under Voltage Protection: Automatically disconnects load during dangerous fluctuations.</li>
+          <li>Over-Current Protection: Protects against overload conditions.</li>
+          <li>User-Friendly Interface: Easy operation with SET and control buttons.</li>
+          <li>Wide Applications: Suitable for homes, offices, shops, and small industries.</li>
+          <li>DIN Rail Mountable: Compact design for quick and safe installation.</li>
+        </ul>
+      `,
+      images: [
+        "Images/Relay-Protection-Two/1.jpg",
+        "Images/Relay-Protection-Two/2.jpg",
+        "Images/Relay-Protection-Two/3.jpg",
+        "Images/Relay-Protection-Two/4.jpg",
+        "Images/Relay-Protection-Two/5.jpg",
+        "Images/Relay-Protection-Two/6.jpg",
+      ]
+    },
+  
+    "Relay-Three": {
+      title: "NIN Electric NP2-VAKWH Digital Voltage Protection Relay (80A, Adjustable Delay, kWh Monitoring)",
+      shortTitle: "NIN Electric NP2-VAKWH",
+      discountPrice: "1650 Rs",
+      originalPrice: "2150 Rs",
+      detail: `
+        The NIN Electric NP2-VAKWH is a high-performance digital voltage protection relay designed to safeguard electrical appliances from over-voltage, under-voltage, and power fluctuations. With a high current capacity of 80A, it is suitable for both residential and commercial applications. This relay features adjustable recovery time, wide voltage protection range, and built-in kWh monitoring, making it a reliable and smart choice for efficient power management.
+        <br><br>
+        <h6>📌 Key Features:</h6>
+        <ul>
+          <liBrand: NIN Electric</li>
+          <li>Model: NP2-VAKWH</li>
+          <li>Rated Current: 80A (suitable for high-load applications)</li>
+          <li>Over-Voltage Protection (Uvo): AC 230V – 300V</li>
+          <li>Under-Voltage Protection (Uve): AC 210V – 140V</li>
+          <li>Adjustable Recovery Time (T): 1 – 600 seconds</li>
+          <li>Energy Monitoring: Built-in kWh counter (1 – 9999 kWh)</li>
+          <li>Dual Function: Voltage protection + Energy (kWh) display</li>
+          <li>DIN Rail Mounting: Easy and secure installation</li>
+        </ul>
+      `,
+      images: [
+        "Images/Relay-Protection-Three/1.jpg",
+        "Images/Relay-Protection-Three/2.jpg",
+        "Images/Relay-Protection-Three/3.jpg",
+        "Images/Relay-Protection-Three/4.jpg",
+        "Images/Relay-Protection-Three/5.jpg",
+        "Images/Relay-Protection-Three/6.jpg",
+      ]
+    },
+  
+     "Relay-Four": {
+      title: "TOMZN TOB7Z-63 Digital Voltage & Current Protection Relay (63A, 2P, DC 1000V)",
+      shortTitle: "TOMZN TOB7Z-63",
+      discountPrice: "1750 Rs",
+      originalPrice: "1950 Rs",
+      detail: `
+        The TOMZN TOB7Z-63 is a high-quality digital protection relay designed for advanced electrical safety. It features dual digital displays for real-time voltage and current monitoring, along with over-voltage, under-voltage, and over-current protection. With a rated current of 63A and voltage support up to DC 1000V, it is suitable for both residential and industrial applications. Its compact DIN rail design ensures easy installation, while its precise control enhances the safety and lifespan of electrical systems.
+        <br><br>
+        <h6>📌 Key Features:</h6>
+        <ul>
+          <li>Brand: TOMZN</li>
+          <li>Model: TOB7Z-63</li>
+          <li>Rated Current: 63A</li>
+          <li>Voltage Capacity: Up to DC 1000V</li>
+          <li>Poles: 2P (Double Pole)</li>
+          <li>Dual LED Display: Shows both voltage (V) and current (A) in real-time</li>
+          <li>Adjustable Settings: User-friendly interface with control buttons for easy configuration</li>
+          <li>Compact Design: DIN rail mountable for quick and safe installation</li>
+          <li>Application: Suitable for homes, offices, solar systems, and industrial equipment</li>
+        </ul>
+      `,
+      images: [
+        "Images/Relay-Protection-Four/1.jpg",
+        "Images/Relay-Protection-Four/2.jpg",
+        "Images/Relay-Protection-Four/3.jpg",
+        "Images/Relay-Protection-Four/4.jpg",
+        "Images/Relay-Protection-Four/5.jpg",
+        "Images/Relay-Protection-Four/6.jpg",
+      ]
+    },
+  
+     "Relay-Five": {
+      title: "ENTES AVK-40A/63A Adjustable Voltage & Current Protection Relay (Over/Under Voltage, Over-Current)",
+      shortTitle: "ENTES AVK-40A/63A",
+      discountPrice: "1250 Rs",
+      originalPrice: "1650 Rs",
+      detail: `
+        The ENTES AVK-40A/63A is a premium adjustable protection relay designed to safeguard electrical systems from voltage fluctuations and overload conditions. Supporting a wide input range of 100–420V AC, it provides reliable protection against over-voltage, under-voltage, and over-current faults. With dual LED displays for real-time monitoring and adjustable settings for precise control, this relay is ideal for both residential and industrial applications. Its robust design and trusted ENTES brand quality make it a reliable solution for long-term electrical safety.
+        <br><br>
+        <h6>📌 Key Features:</h6>
+        <ul>
+          <li>Brand: ENTES</li>
+          <li>Model: AVK-40A/63A</li>
+          <li>Rated Current: Selectable models (40A or 63A)</li>
+          <li>Input Voltage Range: 100–420V AC</li>
+          <li>Under-Voltage Protection (U<): 120–210V (adjustable with OFF option)</li>
+          <li>Over-Voltage Protection (U>): 230–300V (adjustable with OFF option)</li>
+          <li>Over-Current Protection (A>): Adjustable from 1–40A (for 40A model) or 1–63A (for 63A model)</li>
+          <li>Dual LED Display: Real-time monitoring of voltage (V) and current (A)</li>
+          <li>Adjustable Settings: Voltage, current, and trip-off thresholds can be customized</li>
+          <li>Applications: Homes, offices, commercial setups, and industrial machinery</li>
+        </ul>
+      `,
+      images: [
+        "Images/Relay-Protection-Five/1.jpg",
+        "Images/Relay-Protection-Five/2.jpg",
+        "Images/Relay-Protection-Five/3.jpg",
+        "Images/Relay-Protection-Five/4.jpg",
+        "Images/Relay-Protection-Five/5.jpg",
+        "Images/Relay-Protection-Five/6.jpg",
+      ]
+    },
+  
+  
+  };
+
+  
+
+  const productSelect = document.getElementById("product-select");
+  const mainImg = document.getElementById("main-img");
+  const thumbnailRow = document.getElementById("thumbnail-row");
+
+  function updateProduct(type) {
+    const p = products[type];
+    document.getElementById("main-title").innerHTML = p.title;
+    document.getElementById("short-title").innerText = p.shortTitle;
+    document.getElementById("discount-price").innerText = p.discountPrice;
+    document.getElementById("original-price").innerHTML = `<strike> | ${p.originalPrice}</strike>`;
+    document.getElementById("product-detail").innerHTML = p.detail;
+
+    // Update Images
+    mainImg.src = p.images[0];
+    thumbnailRow.innerHTML = "";
+    p.images.forEach(img => {
+      const div = document.createElement("div");
+      div.classList.add("small-img-col");
+      div.innerHTML = `<img src="${img}" width="100%" class="small-img" />`;
+      div.onclick = () => { mainImg.src = img; };
+      thumbnailRow.appendChild(div);
+    });
+  }
+
+  // Default Load
+  updateProduct("Relay-One");
+
+  // Change Event
+  productSelect.addEventListener("change", (e) => {
+    updateProduct(e.target.value);
+  });
+</script>
+
+
+    </div>
+
+    <script src="Script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+"></script>
+  </body>
+</html>
