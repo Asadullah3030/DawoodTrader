@@ -349,7 +349,7 @@
 
 /* About is Start */
 
-.About-Section p{
+.about-us-left p{
     font-weight: 300;
 }
 .footer{
@@ -362,6 +362,9 @@
 }
 .footer-color{
     background-color: rgb(236, 236, 236);
+}
+.contact-us p{
+    font-weight: 300;
 }
 /* About is End */
 
